@@ -1,5 +1,6 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
+import Gun from './gun'
 import React, { useRef } from "react";
 
 
@@ -31,7 +32,7 @@ export default function ThreeD(){
       <Canvas style={{height: '100vh', width:'100vw'}} className="flex justify-center align-center bg-amber-400">
         <OrbitControls enableDamping enableRotate enablePan enableZoom/>
         <directionalLight position={[1,1,1]} intensity={5} color={0xFFFFFF}/>
-        <Shape/>
+        <Gun/>
       </Canvas>  
     );
 }
